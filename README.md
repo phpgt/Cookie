@@ -1,7 +1,7 @@
 Object oriented cookie handler.
 -------------------------------
 
-This library is a simple object oriented alternative to the `$_COOKIE` superglobal that can be read using the same associative array style code. The `Cookie` class represents cookie data in immutable objects, meaning that the state of the request/response cookies cannot be accidentally changed by undisclosed areas of code.
+This library is an object oriented alternative to the `$_COOKIE` superglobal that can be read using the same associative array style code. The `Cookie` class represents cookie data in immutable objects, meaning that the state of the request/response cookies cannot be accidentally changed by undisclosed areas of code.
 
 ***
 
