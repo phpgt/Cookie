@@ -47,7 +47,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 	public function set(
 		string $name,
 		string $value,
-		DateTimeInterface $expires = null,
+		?DateTimeInterface $expires = null,
 		string $domain = "",
 		bool $secure = false,
 		bool $httponly = false
@@ -123,7 +123,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 		return $this->getIteratorNamedIndex();
 	}
 
-	public function valid() {
+	public function valid():bool {
 		if($this->iteratorIndex > $this->count() - 1) {
 			return false;
 		}
@@ -132,7 +132,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 		return $this->contains($name);
 	}
 
-	public function rewind() {
+	public function rewind():void {
 		$this->iteratorIndex = 0;
 	}
 
