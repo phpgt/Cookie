@@ -2,8 +2,8 @@
 namespace Gt\Cookie;
 
 class Cookie {
-	protected $name;
-	protected $value;
+	protected string $name;
+	protected string $value;
 
 	public function __construct(string $name, string $value = "") {
 		if(!Validity::isValidName($name)) {

@@ -7,11 +7,16 @@ use DateTime;
 use DateTimeInterface;
 use Iterator;
 
+/**
+ * @implements ArrayAccess<string, string>
+ * @implements Iterator<string>
+ */
 class CookieHandler implements ArrayAccess, Iterator, Countable {
 	/** @var Cookie[] */
-	protected $cookieList;
-	protected $iteratorIndex;
+	protected array $cookieList;
+	protected int $iteratorIndex;
 
+	/** @param array<string, string> $existingCookies */
 	public function __construct(array $existingCookies = []) {
 		$this->cookieList = [];
 		$this->iteratorIndex = 0;
@@ -47,7 +52,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 	public function set(
 		string $name,
 		string $value,
-		DateTimeInterface $expires = null,
+		?DateTimeInterface $expires = null,
 		string $domain = "",
 		bool $secure = false,
 		bool $httponly = false
@@ -79,6 +84,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 		);
 	}
 
+	/** @return array<string, string> */
 	public function asArray():array {
 		$array = [];
 
@@ -102,7 +108,10 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 	}
 
 	public function offsetSet($offset, $value):void {
-		throw new CookieSetException("Cookies can not be set using ArrayAccess, please use the CookieHandler::set method instead. https://www.php.gt/cookies");
+		throw new CookieSetException(
+			"Cookies can not be set using ArrayAccess, "
+			. "please use the CookieHandler::set method instead. https://www.php.gt/cookies"
+		);
 	}
 
 	public function offsetUnset($offset):void {
@@ -123,7 +132,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 		return $this->getIteratorNamedIndex();
 	}
 
-	public function valid() {
+	public function valid():bool {
 		if($this->iteratorIndex > $this->count() - 1) {
 			return false;
 		}
@@ -132,7 +141,7 @@ class CookieHandler implements ArrayAccess, Iterator, Countable {
 		return $this->contains($name);
 	}
 
-	public function rewind() {
+	public function rewind():void {
 		$this->iteratorIndex = 0;
 	}
 
