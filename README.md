@@ -50,3 +50,9 @@ else {
 ## What's not covered?
 
 This library does not touch on encrypting cookies. To store sensitive information across HTTP requests, use a session variable. To ensure cookies can't be read by JavaScript, use a secure HTTP-only cookie.
+
+# Proudly sponsored by
+
+[JetBrains Open Source sponsorship program](https://www.jetbrains.com/community/opensource/)
+
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://www.jetbrains.com/community/opensource/)
