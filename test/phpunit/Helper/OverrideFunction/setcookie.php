@@ -1,7 +1,7 @@
 <?php
-namespace Gt\Cookie;
+namespace GT\Cookie;
 
-use Gt\Cookie\Test\Helper\Override;
+use GT\Cookie\Test\Helper\Override;
 
 function setcookie() {
 	Override::call("setcookie", func_get_args());

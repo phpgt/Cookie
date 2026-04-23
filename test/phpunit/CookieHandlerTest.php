@@ -1,13 +1,13 @@
 <?php
 
-namespace Gt\Cookie\Test;
+namespace GT\Cookie\Test;
 
-use Gt\Cookie\Cookie;
-use Gt\Cookie\CookieHandler;
-use Gt\Cookie\CookieSetException;
-use Gt\Cookie\Test\Helper\Helper;
-use Gt\Cookie\Test\Helper\Override;
-use Gt\Cookie\Validity;
+use GT\Cookie\Cookie;
+use GT\Cookie\CookieHandler;
+use GT\Cookie\CookieSetException;
+use GT\Cookie\Test\Helper\Helper;
+use GT\Cookie\Test\Helper\Override;
+use GT\Cookie\Validity;
 use PHPUnit\Framework\TestCase;
 
 class CookieHandlerTest extends TestCase {

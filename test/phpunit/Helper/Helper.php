@@ -1,5 +1,5 @@
 <?php
-namespace Gt\Cookie\Test\Helper;
+namespace GT\Cookie\Test\Helper;
 
 class Helper {
 	public static function getRandomText(

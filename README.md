@@ -11,21 +11,21 @@ This library is an object oriented alternative to the `$_COOKIE` superglobal tha
 <a href="https://app.codacy.com/gh/PhpGt/Cookie" target="_blank">
 	<img src="https://badge.status.php.gt/cookie-quality.svg" alt="Code quality" />
 </a>
-<a href="https://app.codacy.com/gh/PhpGt/Cookie" target="_blank">
+<a href="https://app.codecov.io/gh/PhpGt/Cookie" target="_blank">
 	<img src="https://badge.status.php.gt/cookie-coverage.svg" alt="Code coverage" />
 </a>
 <a href="https://packagist.org/packages/PhpGt/Cookie" target="_blank">
 	<img src="https://badge.status.php.gt/cookie-version.svg" alt="Current version" />
 </a>
 <a href="http://www.php.gt/cookie" target="_blank">
-	<img src="https://badge.status.php.gt/cookie-docs.svg" alt="PHP.Gt/Cookie documentation" />
+	<img src="https://badge.status.php.gt/cookie-docs.svg" alt="PHP.GT/Cookie documentation" />
 </a>
 
 ## Example usage
 
 ```php
 // Create a replacement for $_COOKIE.
-$cookie = new Gt\Cookie\CookieHandler($_COOKIE);
+$cookie = new GT\Cookie\CookieHandler($_COOKIE);
 
 // Access values as normal.
 $value = $cookie["firstVisit"];

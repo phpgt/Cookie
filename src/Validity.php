@@ -1,5 +1,5 @@
 <?php
-namespace Gt\Cookie;
+namespace GT\Cookie;
 
 /**
  * Provide a list of valid characters for use in HTTP cookies, as per RFC6265.

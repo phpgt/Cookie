@@ -1,9 +1,9 @@
 <?php
-namespace Gt\Cookie\Test;
+namespace GT\Cookie\Test;
 
-use Gt\Cookie\Cookie;
-use Gt\Cookie\InvalidCharactersException;
-use Gt\Cookie\Validity;
+use GT\Cookie\Cookie;
+use GT\Cookie\InvalidCharactersException;
+use GT\Cookie\Validity;
 use PHPUnit\Framework\TestCase;
 
 class CookieTest extends TestCase {
