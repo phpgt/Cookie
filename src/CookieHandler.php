@@ -1,5 +1,5 @@
 <?php
-namespace Gt\Cookie;
+namespace GT\Cookie;
 
 use ArrayAccess;
 use Countable;

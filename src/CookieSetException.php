@@ -1,5 +1,5 @@
 <?php
 
-namespace Gt\Cookie;
+namespace GT\Cookie;
 
 class CookieSetException extends CookieException {}

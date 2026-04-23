@@ -23,12 +23,14 @@
 
 	"autoload": {
 		"psr-4": {
+			"GT\\Cookie\\": "./src",
 			"Gt\\Cookie\\": "./src"
 		}
 	},
 
 	"autoload-dev": {
 		"psr-4": {
+			"GT\\Cookie\\Test\\": "./test/phpunit",
 			"Gt\\Cookie\\Test\\": "./test/phpunit"
 		}
 	},

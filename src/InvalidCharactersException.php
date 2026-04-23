@@ -1,4 +1,4 @@
 <?php
-namespace Gt\Cookie;
+namespace GT\Cookie;
 
 class InvalidCharactersException extends CookieException {}
