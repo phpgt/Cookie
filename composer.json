@@ -30,8 +30,7 @@
 
 	"autoload-dev": {
 		"psr-4": {
-			"GT\\Cookie\\Test\\": "./test/phpunit",
-			"Gt\\Cookie\\Test\\": "./test/phpunit"
+			"GT\\Cookie\\Test\\": "./test/phpunit"
 		}
 	},
 
